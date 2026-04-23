@@ -97,6 +97,8 @@ Os testes cobrem todos os casos descritos no documento de caso de teste, além d
 | `Order_RegrasComNulos` | Lança `OrdenacaoException` |
 | `Order_ComConfiguracaoDoArquivoJson` | Carrega regras do `appsettings.json` e ordena corretamente |
 
+![Tests](Tests.jpeg)
+
 ---
 
 ## Plataforma
