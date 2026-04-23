@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../FGV.OrdenacaoLivros.Tests/FGV.OrdenacaoLivros.Tests.csproj" />
+  <Project Path="FGV.OrdenacaoLivros.csproj" />
+</Solution>
