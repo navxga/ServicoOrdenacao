@@ -67,6 +67,20 @@ Essa separação mantém as mensagens organizadas e centralizadas, sem depender 
 
 ---
 
+## Diagrama de classes
+
+![Diagrama UML de classes](UML.jpg)
+
+O diagrama representa as relações entre as classes da solução:
+
+- `BooksOrderer` realiza o contrato definido por `IBooksOrderer`
+- `BooksOrderer` recebe `IEnumerable<OrderingRule>` e ordena `IEnumerable<Book>`
+- `OrderingRule` depende de `AttributeEnum` para definir o atributo de ordenação
+- `OrderingRuleConfig` produz `IEnumerable<OrderingRule>` a partir do `appsettings.json`
+- `OrdenacaoException` e `BooksException` são lançadas por `BooksOrderer` em casos de entrada inválida
+
+---
+
 ## Testes
 
 Os testes cobrem todos os casos descritos no documento de caso de teste, além de casos extras de validação:
